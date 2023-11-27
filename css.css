@@ -13,16 +13,16 @@ body{
     position: relative;
 }
 
+.backBT{
+    display :inline-block;
+    position: absolute;
+    top: 50%;
+}
+
 .side{
     background-color: #E6E6E6;
     width: 550px;
     height: 730px;
     margin: 0;
     float:left;
-}
-
-.backBT{
-    display :inline-block;
-    position: absolute;
-    top: 50%;
 }
