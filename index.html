@@ -9,17 +9,30 @@
 </head>
 <body>
      <div class="back">
-        <div class="backBT">
-            <button></button>
+        <div id="backBT">
+            <button id="BT"></button>
         </div>
      </div>
      <div class="side">
-        <div class="cl">
-            <input type="radio" name="tabs" id="tab1" checked>
-            <label for="ta1">바탕색</label>
-            <input type="radio" name="tabs" id="tab2">
-            <label for="ta2">윤곽선색</label>
+        <div class="cl"> 
+            <label for="tab1">바탕색</label>
+            <input type="color" id="tab1" value="#ffffff">
+            <br>
+            <label for="tab2">윤곽선색</label>
+            <input type="color" id="tab2" value="#004cc7">
         </div>
+        <br>
+        가로
+        <input type="range" id="Width" name="size" min="10" max="800" step="10" value="200">
+        <br>
+        세로
+        <input type="range" id="Height" name="size" min="10" max="600" step="10" value="100">
+        <br>
+        둥글게
+        <input type="range" id="Radius" name="size" min="0" max="20" step="1" value="0">
+        <br>
+        윤곽선
+        <input type="range" id="Border" name="size" min="0" max="100" step="1" value="0">
      </div>
 </body>
 </html>
