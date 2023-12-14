@@ -21,7 +21,7 @@ button:focus{
 .back{
     background-color: rgb(255, 255, 255);
     width : 950px;
-    height: 730px;
+    height: 728px;
     margin: 0;
     float:left; /*옆으로*/
     text-align: center; /*수평중앙*/
@@ -48,7 +48,7 @@ button{
 .side{
     background-color: #E6E6E6;
     width: 488px;
-    height: 660px;
+    height: 658px;
     margin: 0;
     float:left;
     padding-left: 73px;
