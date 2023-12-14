@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hahmlet:wght@300&family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <script src="js.js"></script>
     <title>just button</title>
 </head>
 <body>
-    
+     <div class="back">
+        <div id="backBT">
+            <button id="BT"></button>
+        </div>
+     </div>
+     <div class="side">
+        <div id="box">
+            <div class="cl"> 
+                <label for="tab1">바탕색</label>
+                <input type="color" id="tab1" value="#ffffff" oninput="BackCo('c1',tab1)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="tab2">윤곽선색</label>
+                <input type="color" id="tab2" value="#004cc7" oninput="BorCo('c2',tab2)">
+            </div>
+            <br><br>
+            가로
+            <input type="range" id="Width" name="size" min="10" max="800" step="10" value="200" oninput="Wsize('w', Width)">
+            <br>
+            세로
+            <input type="range" id="Height" name="size" min="10" max="600" step="10" value="100" oninput="Hsize('h', Height)">
+            <br>
+            둥글게
+            <input type="range" id="Radius" name="size" min="0" max="200" step="10" value="0" oninput="Rsize('r', Radius)">
+            <br>
+            윤곽선
+            <input type="range" id="Border" name="size" min="0" max="100" step="1" value="10" oninput="Bsize('b', Border)">
+            <br>            
+        </div>
+        <div id="not"></div>
+        <div id="CP">
+            <pre><code>
+  button{
+      background-color: <span id="c1"></span>;
+      border-color: <span id="c2"></span>;
+      border-radius: <span id="r"></span>;
+      border-width: <span id="b"></span>;
+      width: <span id="w"></span>;
+      height: <span id="h"></span>;
+  }</code></pre>
+        </div>
+     </div>
 </body>
 </html>
